@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #243047;
+      background: #f5f7fb;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 1rem 8%;
+      background: #fff;
+      border-bottom: 1px solid #e5e9f0;
+    }
+
+    header a {
+      color: #243047;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    main {
+      width: min(900px, 88%);
+      margin: 4rem auto;
+    }
+
+    .contact-card {
+      padding: 3rem;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgb(36 48 71 / 8%);
+    }
+
+    .eyebrow {
+      color: #5368e8;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    h1 {
+      margin: 0.5rem 0 1rem;
+      font-size: clamp(2.2rem, 6vw, 3.5rem);
+      line-height: 1.1;
+    }
+
+    .contact-details {
+      margin: 1.5rem 0 2rem;
+    }
+
+    .contact-details a {
+      color: #5368e8;
+    }
+
+    form {
+      display: grid;
+      gap: 1rem;
+    }
+
+    label {
+      display: grid;
+      gap: 0.4rem;
+      font-weight: bold;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #cbd2df;
+      border-radius: 8px;
+      font: inherit;
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    button {
+      justify-self: start;
+      padding: 0.8rem 1.3rem;
+      color: #fff;
+      background: #5368e8;
+      border: 0;
+      border-radius: 8px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #4053cc;
+    }
+
+    footer {
+      padding: 1.5rem;
+      color: #687386;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .contact-card {
+        padding: 2rem 1.5rem;
+      }
+
+      main {
+        margin: 2rem auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">Your Company</a>
+  </header>
+
+  <main>
+    <section class="contact-card">
+      <p class="eyebrow">Contact</p>
+      <h1>Let’s talk.</h1>
+      <p>Have a question or an idea? Send us a message and we’ll be happy to hear from you.</p>
+
+      <div class="contact-details">
+        <strong>Email:</strong>
+        <a href="mailto:hello@example.com">hello@example.com</a>
+      </div>
+
+      <form action="mailto:hello@example.com" method="post" enctype="text/plain">
+        <label for="name">
+          Your name
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </label>
+
+        <label for="email">
+          Your email
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </label>
+
+        <label for="message">
+          Message
+          <textarea id="message" name="message" required></textarea>
+        </label>
+
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 Your Company. All rights reserved.</footer>
+</body>
+</html>
